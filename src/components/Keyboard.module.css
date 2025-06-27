@@ -1,0 +1,69 @@
+.container {
+    position: relative;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+.key-container {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 150px;
+}
+
+.white-key {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.black-key {
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    translate: 50%;
+    background-color: #333;
+}
+
+.white-key:hover,
+.black-key:hover {
+    background-color: #91c1f1;
+}
+
+.playing {
+    background-color: var(--Blue) !important;
+}
+
+.focused {
+    background-color: #91c1f1;
+}
+
+.key-label {
+    display: none;
+    position: absolute;
+    font-size: 1rem;
+    color: var(--Blue);
+}
+
+.white-key .key-label {
+    bottom: 0;
+    left: 50%;
+    translate: -50% calc((100% + 5px));
+}
+
+.black-key .key-label {
+    top: 0;
+    left: 50%;
+    translate: -50% calc(-100% - 5px);
+}
+
+.playing .key-label {
+    display: block;
+}

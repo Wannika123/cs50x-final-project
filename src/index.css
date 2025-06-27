@@ -1,0 +1,39 @@
+:root {
+    --Blue: #045bb2;
+    --Dark-blue: #031956;
+    --Header: #333;
+    --Paragraph: #555;
+    --Main-bg: #ddd;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Main-bg);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+}
+
+h1 {
+    color: var(--Header);
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 3.25rem;
+}
+
+footer {
+    font-size: 0.9rem;
+    color: var(--Paragraph);
+    margin-top: 60px;
+    text-align: center;
+}
+
+footer a {
+    color: var(--Dark-blue);
+}

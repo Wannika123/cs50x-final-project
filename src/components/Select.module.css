@@ -1,0 +1,58 @@
+.container {
+    position: relative;
+    width: 8em;
+    min-height: 1.5em;
+    border: 1px solid #555;
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    outline: none;
+    background-color: #eee;
+}
+
+.container.disabled {
+    opacity: 0.5;
+}
+
+.container:focus-visible {
+    outline: 2px solid var(--Blue);
+}
+
+.value {
+    color: var(--Header);
+}
+
+.caret {
+    margin-left: auto;
+    border: 0.25em solid transparent;
+    border-top-color: #555;
+    translate: 0 25%;
+}
+
+.options {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: calc(100% + 5px);
+    display: none;
+    background-color: #eee;
+    z-index: 5;
+}
+
+.show {
+    display: block;
+}
+
+.option {
+    list-style: none;
+    padding: 0.5em;
+}
+
+.selected {
+    background-color: #809dee !important;
+}
+
+.highlighted {
+    background-color: #bbb;
+}

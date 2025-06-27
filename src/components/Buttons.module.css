@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-container input {
+    width: 70px;
+    padding: 4px;
+    margin-right: 12px;
+    color: var(--Header);
+    font-size: 1rem;
+}
+
+.input-container span {
+    color: var(--Paragraph);
+    font-size: 0.9rem;
+}
+
+.btns-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.btns-container button {
+    width: 180px;
+    padding: 6px;
+    background-color: var(--Paragraph);
+    color: var(--Main-bg);
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid var(--Paragraph);
+}
+
+.btns-container button:hover {
+    cursor: pointer;
+    background-color: var(--Main-bg);
+    color: var(--Paragraph);
+    transition: all 0.2s;
+}
+
+.btns-container button.disabled-btn {
+    cursor: not-allowed;
+    opacity: 0.5;
+    background-color: var(--Paragraph) !important;
+    color: var(--Main-bg) !important;
+}

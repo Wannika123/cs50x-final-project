@@ -1,0 +1,173 @@
+.container {
+    position: relative;
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    border: 2px solid #33333380;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    border-color: var(--Blue);
+    transition: border-color 0.2s;
+}
+
+.popup-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.popup-container button {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Header);
+    border: 0.5px solid var(--Header);
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.popup-container button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.popup-container p {
+    width: 300px;
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    left: 50%;
+    translate: -50% calc(-100% - 5px);
+    background-color: var(--Dark-blue);
+    color: var(--Main-bg);
+    padding: 8px;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    border-radius: 4px;
+    display: none;
+}
+
+.popup-container p.show {
+    display: block;
+}
+
+.musical-note {
+    height: 40px;
+    width: 2px;
+    background-color: var(--Blue);
+    position: relative;
+    display: none;
+}
+
+.musical-note::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    border-top: 4px solid var(--Blue);
+    rotate: 30deg;
+    transform-origin: 0% 0%;
+}
+
+.musical-note::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: var(--Blue);
+    translate: 0 50%;
+    transform: skewY(-15deg);
+}
+
+.active .musical-note {
+    display: block;
+    animation: sway 1s ease-in-out infinite;
+}
+
+@keyframes sway {
+    0% {
+        rotate: -20deg;
+    }
+    50% {
+        rotate: 20deg;
+    }
+    100% {
+        rotate: -20deg;
+    }
+}
+
+.chord-container {
+    position: absolute;
+    height: 50%;
+    top: 0;
+    left: 50%;
+    translate: -50%;
+    text-align: center;
+    transform-origin: 50% 100%;
+}
+
+.chord-name {
+    font-size: 32px;
+    translate: 0 15px;
+    color: #33333370;
+    white-space: pre;
+    line-height: 90%;
+}
+
+.dash {
+    margin: 0 auto;
+    width: 18px;
+    border-top: 2px solid #33333370;
+    transform: rotate(90deg);
+}
+
+.active .chord-name {
+    color: var(--Blue);
+    transition: color 0.2s;
+}
+
+.chord-name:hover {
+    cursor: pointer;
+    color: #045bb290;
+    transition: color 0.2s;
+}
+
+.chord-name.active-chord {
+    scale: 1.4;
+    animation: bigger 0.3s;
+    color: var(--Blue) !important;
+}
+
+.chord-name.disabled {
+    cursor: not-allowed;
+    color: var(--Blue) !important;
+}
+
+.active .dash {
+    border-color: var(--Blue);
+}
+
+.focused-chord {
+    outline: 2px solid blue;
+}
+
+@keyframes bigger {
+    from {
+        scale: 1;
+    }
+    to {
+        scale: 1.4;
+    }
+}
