@@ -5,7 +5,7 @@ This is CS50x final project by Wannika Kuankachorn.
 ## Table of contents
 
 -   [Overview](#overview)
-    -   [Video Demo](#video-demo)
+    -   [Links](#links)
     -   [Description](#description)
 -   [Built with](#built-with)
 -   [Inside `src/` folder](#inside-src-folder)
@@ -19,9 +19,10 @@ This is CS50x final project by Wannika Kuankachorn.
 
 ## Overview
 
-### Video Demo
+### Links
 
-https://youtu.be/6IMRySl7ZEk
+Video Demo: [Youtube](https://youtu.be/6IMRySl7ZEk)
+Preview Site: [Vercel](https://cs50x-final-project.vercel.app/)
 
 ### Description
 
@@ -140,7 +141,7 @@ This function has 1 parameter: `nextTriad`, which is an array of 3 numbers.
 const voicing = (nextTriad) => { ... }
 ```
 
-**What's triad?**
+<ins>What's triad?</ins>
 
 In its fundamental form, triad looks like this:
 
@@ -570,7 +571,7 @@ useEffect(() => {
 
 2. Ever since I started learning how to code, which is the subject that probably has the best resources online, I have encountered many _interactive_ lessons and examples. And in my opinion, it works so well for certain contents. And it makes me think that it would be nice if there are something like that in other subjects as well.
 
-3. Music is a very difficult subject to _talk about_ (music in itself is not as difficult perhaps). When we try, it can potentially sound super complicated. And I think the main reason is because of all the weird vocabularies like triad, inversion, cadence, major, minor etc., which are just necessary (and unavoidable) when we try to refer to certain note or something, but they are not essential at all.
+3. Music is difficult, but it's even more difficult when we try to talk about it. And whenever we do, it can potentially sound super complicated. And I think the main reason is because of all the weird vocabularies like triad, inversion, cadence, major, minor etc., which are just necessary (and unavoidable) when we try to refer to certain note or something, but they are not essential at all.
 
 So, this project is the result of all these. It's my attempt, as many others has attempted before, to clarify Circle of Fifth. It invites users to forget all the weird vocabularies (you can even forget what perfect fifth is), and focus on the essential, which is how it sounds like.
 
